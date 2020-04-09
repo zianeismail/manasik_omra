@@ -1,0 +1,190 @@
+.main{
+  background-color: #e9ecef54;;
+    width: 80%;
+    margin: auto;
+}
+.clearfix{
+  clear: both;
+}
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800;);
+  .h2-1{
+    direction: rtl;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    animation: zoomIn 3s;
+  }
+  .snip1521 {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    animation: flipInX 3s;
+  }
+  
+  .snip1521 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  
+  .snip1521 img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .snip1521 figcaption {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    padding: 5px 20px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    line-height: 1.1em;
+    overflow: hidden;
+    height: 44px;
+  }
+  
+  .snip1521 h3 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  .snip1521 .title{
+    font-size: 1.1em;
+    color: blue;
+  }
+
+  
+  .snip1521 h3.hover {
+    color: #ffffff;
+    font-weight: 800;
+  }
+  
+  .snip1521 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .snip1521:hover > img,
+  .snip1521.hover > img {
+    opacity: 0;
+  }
+  
+  .snip1521:hover figcaption,
+  .snip1521.hover figcaption {
+    background: var(--bggradient);
+  }
+  
+  .snip1521:hover .title,
+  .snip1521.hover .title {
+    -webkit-transform: translateY(-150%);
+    transform: translateY(-150%);
+  }
+  
+  .snip1521:hover .hover,
+  .snip1521.hover .hover {
+    -webkit-transform: translateY(-150%);
+    transform: translateY(-150%);
+  }
+  .snip1521:hover{
+    background: var(--bggradient);
+    border-radius: 50%;
+  }
+ #demo1,#demo2,#demo3,#demo4,#demo5,#demo6{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+ }
+ .container2{
+     width: 50%;
+     margin: 40px auto 0 auto;
+     float: right;
+ }
+ .hieght{
+    height:190px;
+    overflow: auto;
+    direction: rtl;
+    
+    
+ }
+ button.btn.active,
+button.btn:hover {
+
+  background-color: #ddd;
+  color: blue;
+}
+.btn-group{
+  margin: auto;
+}
+@media screen and ( max-width:800px)
+{
+    .container2{
+        width: 100%;
+    }
+}
+
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
